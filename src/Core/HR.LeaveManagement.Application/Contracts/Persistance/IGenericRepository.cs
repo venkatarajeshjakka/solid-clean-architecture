@@ -1,7 +1,4 @@
-﻿using System;
-using HR.LeaveManagement.Domain;
-
-namespace HR.LeaveManagement.Application.Contracts.Persistance;
+﻿namespace HR.LeaveManagement.Application.Contracts.Persistance;
 
 public interface IGenericRepository<T> where T : class
 {

@@ -9,9 +9,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Common\" />
+    <None Remove="Contracts\" />
+    <None Remove="Contracts\Persistance\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Common\" />
+    <Folder Include="Contracts\" />
+    <Folder Include="Contracts\Persistance\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HR.LeaveManagement.Domain\HR.LeaveManagement.Domain.csproj" />
   </ItemGroup>
 </Project>
