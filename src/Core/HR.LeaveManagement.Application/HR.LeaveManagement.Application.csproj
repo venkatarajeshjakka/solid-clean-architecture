@@ -11,12 +11,31 @@
   <ItemGroup>
     <None Remove="Contracts\" />
     <None Remove="Contracts\Persistance\" />
+    <None Remove="MappingProfiles\" />
+    <None Remove="Features\" />
+    <None Remove="Features\LeaveType\" />
+    <None Remove="Features\LeaveType\Queries\" />
+    <None Remove="Features\LeaveType\Commands\" />
+    <None Remove="Features\LeaveType\Queries\GetAllLeaveTypes\" />
+    <None Remove="Features\LeaveType\Queries\GetLeaveTypeDetails\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Contracts\" />
     <Folder Include="Contracts\Persistance\" />
+    <Folder Include="MappingProfiles\" />
+    <Folder Include="Features\" />
+    <Folder Include="Features\LeaveType\" />
+    <Folder Include="Features\LeaveType\Queries\" />
+    <Folder Include="Features\LeaveType\Commands\" />
+    <Folder Include="Features\LeaveType\Queries\GetAllLeaveTypes\" />
+    <Folder Include="Features\LeaveType\Queries\GetLeaveTypeDetails\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\HR.LeaveManagement.Domain\HR.LeaveManagement.Domain.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
   </ItemGroup>
 </Project>
