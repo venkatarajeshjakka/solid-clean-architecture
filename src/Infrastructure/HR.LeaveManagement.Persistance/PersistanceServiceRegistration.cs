@@ -1,5 +1,7 @@
 ﻿using System;
+using HR.LeaveManagement.Application.Contracts.Persistance;
 using HR.LeaveManagement.Persistance.DatabaseContext;
+using HR.LeaveManagement.Persistance.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -15,6 +17,7 @@ public static class PersistanceServiceRegistration
             {
                 options.UseSqlServer(configuration.GetConnectionString("HrDatabaseConnectionString"));
             });
+        services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 
         return services;
     }
