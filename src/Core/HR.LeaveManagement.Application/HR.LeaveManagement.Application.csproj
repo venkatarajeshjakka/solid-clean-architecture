@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Contracts\" />
+    <None Remove="Contracts\Persistance\" />
+    <None Remove="MappingProfiles\" />
+    <None Remove="Features\" />
+    <None Remove="Features\LeaveType\" />
+    <None Remove="Features\LeaveType\Queries\" />
+    <None Remove="Features\LeaveType\Commands\" />
+    <None Remove="Features\LeaveType\Queries\GetAllLeaveTypes\" />
+    <None Remove="Features\LeaveType\Queries\GetLeaveTypeDetails\" />
+    <None Remove="Features\LeaveType\Commands\UpdateLeaveType\" />
+    <None Remove="Features\LeaveType\Commands\DeleteLeaveType\" />
+    <None Remove="Exceptions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Contracts\" />
+    <Folder Include="Contracts\Persistance\" />
+    <Folder Include="MappingProfiles\" />
+    <Folder Include="Features\" />
+    <Folder Include="Features\LeaveType\" />
+    <Folder Include="Features\LeaveType\Queries\" />
+    <Folder Include="Features\LeaveType\Commands\" />
+    <Folder Include="Features\LeaveType\Queries\GetAllLeaveTypes\" />
+    <Folder Include="Features\LeaveType\Queries\GetLeaveTypeDetails\" />
+    <Folder Include="Features\LeaveType\Commands\UpdateLeaveType\" />
+    <Folder Include="Features\LeaveType\Commands\DeleteLeaveType\" />
+    <Folder Include="Exceptions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HR.LeaveManagement.Domain\HR.LeaveManagement.Domain.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.5.2" />
+    <PackageReference Include="FluentValidation" Version="11.5.2" />
+  </ItemGroup>
+</Project>
