@@ -21,6 +21,10 @@
     <None Remove="Features\LeaveType\Commands\UpdateLeaveType\" />
     <None Remove="Features\LeaveType\Commands\DeleteLeaveType\" />
     <None Remove="Exceptions\" />
+    <None Remove="Contracts\Email\" />
+    <None Remove="Models\" />
+    <None Remove="Models\Email\" />
+    <None Remove="Contracts\Logging\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Contracts\" />
@@ -35,6 +39,10 @@
     <Folder Include="Features\LeaveType\Commands\UpdateLeaveType\" />
     <Folder Include="Features\LeaveType\Commands\DeleteLeaveType\" />
     <Folder Include="Exceptions\" />
+    <Folder Include="Contracts\Email\" />
+    <Folder Include="Models\" />
+    <Folder Include="Models\Email\" />
+    <Folder Include="Contracts\Logging\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\HR.LeaveManagement.Domain\HR.LeaveManagement.Domain.csproj" />
