@@ -40,6 +40,7 @@ public class LeaveTypeController : ControllerBase
     [HttpPost]
     [ProducesResponseType(StatusCodes.Status201Created)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<ActionResult> Post(CreateLeaveTypeCommand leaveType)
     {
         var response = await _mediator.Send(leaveType);
