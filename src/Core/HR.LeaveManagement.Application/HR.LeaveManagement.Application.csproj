@@ -33,6 +33,14 @@
     <None Remove="Features\LeaveAllocation\Commands\DeleteLeaveAllocation\" />
     <None Remove="Features\LeaveAllocation\Queries\GetLeaveAllocations\" />
     <None Remove="Features\LeaveAllocation\Queries\GetLeaveAllocationDetails\" />
+    <None Remove="Features\LeaveRequest\" />
+    <None Remove="Features\LeaveRequest\Commands\" />
+    <None Remove="Features\LeaveRequest\Queries\" />
+    <None Remove="Features\LeaveRequest\Queries\GetLeaveRequestList\" />
+    <None Remove="Features\LeaveRequest\Queries\GetLeaveRequestDetails\" />
+    <None Remove="Features\LeaveRequest\Commands\DeleteLeaveRequest\" />
+    <None Remove="Features\LeaveRequest\Shared\" />
+    <None Remove="Features\LeaveRequest\Commands\UpdateLeaveRequest\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Contracts\" />
@@ -59,6 +67,14 @@
     <Folder Include="Features\LeaveAllocation\Commands\DeleteLeaveAllocation\" />
     <Folder Include="Features\LeaveAllocation\Queries\GetLeaveAllocations\" />
     <Folder Include="Features\LeaveAllocation\Queries\GetLeaveAllocationDetails\" />
+    <Folder Include="Features\LeaveRequest\" />
+    <Folder Include="Features\LeaveRequest\Commands\" />
+    <Folder Include="Features\LeaveRequest\Queries\" />
+    <Folder Include="Features\LeaveRequest\Queries\GetLeaveRequestList\" />
+    <Folder Include="Features\LeaveRequest\Queries\GetLeaveRequestDetails\" />
+    <Folder Include="Features\LeaveRequest\Commands\DeleteLeaveRequest\" />
+    <Folder Include="Features\LeaveRequest\Shared\" />
+    <Folder Include="Features\LeaveRequest\Commands\UpdateLeaveRequest\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\HR.LeaveManagement.Domain\HR.LeaveManagement.Domain.csproj" />
