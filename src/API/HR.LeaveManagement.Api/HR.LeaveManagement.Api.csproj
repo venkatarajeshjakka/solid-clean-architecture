@@ -27,6 +27,9 @@
     <ProjectReference Include="..\..\Infrastructure\HR.LeaveManagement.Persistance\HR.LeaveManagement.Persistance.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
+    <ProjectReference Include="..\..\Infrastructure\HR.LeaveManagement.Identity\HR.LeaveManagement.Identity.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Remove="Middlewares\" />
