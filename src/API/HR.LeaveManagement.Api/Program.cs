@@ -3,9 +3,17 @@ using Hr.LeaveManagement.Infrastructure;
 using HR.LeaveManagement.Persistance;
 using HR.LeaveManagement.Api.Middlewares;
 using HR.LeaveManagement.Identity;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
+//Register Serilog
+
+builder.Host.UseSerilog((context,loggerConfig) => loggerConfig
+.WriteTo.Console()
+.ReadFrom.Configuration(context.Configuration)
+);
 // Add services to the container.
 
 builder.Services.AddApplicationServices();
@@ -35,6 +43,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+app.UseSerilogRequestLogging();
 
 app.UseHttpsRedirection();
 
