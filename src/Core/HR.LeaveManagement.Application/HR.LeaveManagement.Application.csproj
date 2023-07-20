@@ -44,6 +44,8 @@
     <None Remove="Features\LeaveRequest\Commands\CreateLeaveRequest\" />
     <None Remove="Features\LeaveRequest\Commands\CancelRequest\" />
     <None Remove="Features\LeaveRequest\Commands\ChangeLeaveRequestApproval\" />
+    <None Remove="Contracts\Identity\" />
+    <None Remove="Models\Identity\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Contracts\" />
@@ -81,6 +83,8 @@
     <Folder Include="Features\LeaveRequest\Commands\CreateLeaveRequest\" />
     <Folder Include="Features\LeaveRequest\Commands\CancelRequest\" />
     <Folder Include="Features\LeaveRequest\Commands\ChangeLeaveRequestApproval\" />
+    <Folder Include="Contracts\Identity\" />
+    <Folder Include="Models\Identity\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\HR.LeaveManagement.Domain\HR.LeaveManagement.Domain.csproj" />
